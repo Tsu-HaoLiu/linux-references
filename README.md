@@ -27,8 +27,9 @@ make -C /lib/modules/$(uname -r)/build M=$(pwd) modules
 lsmod | grep ipw 
 lspci -v
 
-# and stop it
+# and stop it (or start it)
 sudo modprobe -r ipw2xxx
+sudo modprobe ipw2xxx
 
 # insert module
 sudo insmod ipw2200.ko
@@ -37,5 +38,4 @@ sudo insmod ipw2200.ko
 # insmod: ERROR: could not insert module some-module.ko: Unknown symbol in module
 # Check logs
 dmesg | tail
-
 ```
