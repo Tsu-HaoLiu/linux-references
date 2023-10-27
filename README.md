@@ -2,7 +2,7 @@
 
 
 ### Building, Compiling and Installing kernel modules/drivers
-
+https://askubuntu.com/questions/1388115/how-do-i-update-my-kernel-to-the-latest-one
 ```
 # You will need to install headers
 sudo apt install linux-headers-$(uname -r)
