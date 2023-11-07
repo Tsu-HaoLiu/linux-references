@@ -42,6 +42,7 @@ dmesg | tail
 
 ### Build Linux Kernel From Scratch
 https://phoenixnap.com/kb/build-linux-kernel
+
 https://www.kernel.org
 ```
 # Download source code from offical kernel site
