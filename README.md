@@ -39,3 +39,38 @@ sudo insmod ipw2200.ko
 # Check logs
 dmesg | tail
 ```
+
+### Build Linux Kernel From Scratch
+https://phoenixnap.com/kb/build-linux-kernel
+https://www.kernel.org
+```
+# Download source code from offical kernel site
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
+
+# Extract the Source Code
+tar xvf linux-6.6.tar.xz
+
+# Required Packages for building kernel
+sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison
+
+# Enter directory
+cd linux-6.6
+
+# Copy config file
+cp -v /boot/config-$(uname -r) .config
+
+# Make changes to config file
+make menuconfig
+
+# Build kernel
+make
+
+# Install required modules
+sudo make modules_install
+
+# Install kernel
+sudo make install
+
+```
+
+
