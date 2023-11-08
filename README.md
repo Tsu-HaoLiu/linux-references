@@ -71,7 +71,7 @@ make
 @ need to restart PC after installing
 
 # Install required modules
-sudo make modules_install
+sudo make INSTALL_MOD_STRIP=1 modules_install
 
 # Install kernel
 sudo make install
