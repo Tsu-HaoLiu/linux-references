@@ -65,6 +65,10 @@ make menuconfig
 
 # Build kernel
 make
+# Errors .tmp_vmlinux.btf: pahole (pahole is not available)
+# Failed to generate BTF for vmlinux
+# https://stackoverflow.com/questions/61657707/btf-tmp-vmlinux-btf-pahole-pahole-is-not-available
+@ need to restart PC after installing
 
 # Install required modules
 sudo make modules_install
