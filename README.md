@@ -78,4 +78,9 @@ sudo make install
 
 ```
 
+### Searching for new headers
+```
+apt search linux-headers | grep headers
+```
+
 
