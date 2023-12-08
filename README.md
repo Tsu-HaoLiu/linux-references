@@ -93,7 +93,8 @@ sudo rm <file>
 # /lib/modules/*KERNEL-VERSION*/
 # /var/lib/initramfs/*KERNEL-VERSION*/
 
-
+# Update grub config
+sudo update-grub2
 ```
 
 
