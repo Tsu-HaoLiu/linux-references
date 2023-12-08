@@ -3,7 +3,7 @@
 
 ### Building, Compiling and Installing kernel modules/drivers
 https://askubuntu.com/questions/1388115/how-do-i-update-my-kernel-to-the-latest-one
-```
+```Shell
 # You will need to install headers
 sudo apt install linux-headers-$(uname -r)
 
@@ -44,7 +44,7 @@ dmesg | tail
 https://phoenixnap.com/kb/build-linux-kernel
 
 https://www.kernel.org
-```
+```Shell
 # Download source code from offical kernel site
 wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 
@@ -78,8 +78,27 @@ sudo make install
 
 ```
 
-### Searching for new headers
+### Uninstalling Built Linux Kernel From Source
+https://askubuntu.com/questions/594443/how-can-i-remove-compiled-kernel
+```Shell
+# Locate boot folder
+ll /boot/
+
+# Remove files
+sudo rm <file>
+# /boot/vmlinuz*KERNEL-VERSION*
+# /boot/initrd*KERNEL-VERSION*
+# /boot/System-map*KERNEL-VERSION*
+# /boot/config-*KERNEL-VERSION*
+# /lib/modules/*KERNEL-VERSION*/
+# /var/lib/initramfs/*KERNEL-VERSION*/
+
+
 ```
+
+
+### Searching for new headers
+```Shell
 apt search linux-headers | grep headers
 ```
 
