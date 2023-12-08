@@ -68,7 +68,7 @@ make
 # Errors .tmp_vmlinux.btf: pahole (pahole is not available)
 # Failed to generate BTF for vmlinux
 # https://stackoverflow.com/questions/61657707/btf-tmp-vmlinux-btf-pahole-pahole-is-not-available
-@ need to restart PC after installing
+# need to restart PC after installing
 
 # Install required modules
 sudo make INSTALL_MOD_STRIP=1 modules_install
